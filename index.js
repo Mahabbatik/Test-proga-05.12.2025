@@ -8,7 +8,7 @@ const reverse = (str) => {
     return str.split('').reverse().join('');
 }
 //3
-const wordsToRegister = (str) => {
+let wordsToRegister = (str) => {
     let result = '';
     for (let i = 0; i < str.length; i++) {
         if (i % 2 === 0) {
@@ -16,8 +16,8 @@ const wordsToRegister = (str) => {
         } else {
             result += str[i].toUpperCase();
         }
-        return result;
     }
+    return result;
 }
 //4
 const sumOfDigitsInString = (str) => {
